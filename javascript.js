@@ -1,5 +1,7 @@
-console.log("Hello World")
+humanScore = 0;
+computerScore = 0;
 
+// Get computer choice
 function getComputerChoice(){
     random = Math.random();
     if (random <= 0.33) {
@@ -13,4 +15,13 @@ function getComputerChoice(){
     }
 }
 
-console.log(getComputerChoice());
+// Get Human choice
+function getHumanChoice(){
+    choice = prompt("Type Rock, Paper or Scissors");
+    return choice.toLowerCase()
+}
+
+humanChoice = getHumanChoice()
+
+console.log("Computer Choice: " + getComputerChoice());
+console.log("Human Choice: " + humanChoice);
